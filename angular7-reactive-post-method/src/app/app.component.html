@@ -1,0 +1,64 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      Reactive Form Module
+    </div>
+    <div class="panel-body">
+    <form  [formGroup]="myform" (ngSubmit) = "onSubmit(myform.value)">
+        <div class="form-group" [ngClass]="{'has-error': !formData.fName.valid && formData.fName.touched}">
+          <label class="col-md-4">First Name</label>
+          <input type="text" class="form-control" name="fName" formControlName="fName" />
+          <div *ngIf="formData.fName.touched && formData.fName.errors" style="margin-top:10px">
+        <div class="alert alert-danger" *ngIf="formData.fName.errors.required">
+          The First Name is required
+        </div>     
+          <div class="alert alert-danger" *ngIf="formData.fName.errors.pattern">
+              The Name is not valid, Numeric data not allowed
+          </div>          
+      </div>
+        </div>
+         <div class="form-group" [ngClass]="{'has-error': !formData.lName.valid && formData.lName.touched}">
+          <label class="col-md-4">Last Name</label>
+          <input type="text" class="form-control" name="lName" formControlName="lName"/>
+          <div *ngIf="formData.lName.touched && formData.lName.errors" style="margin-top:10px">
+        <div class="alert alert-danger" *ngIf="formData.lName.errors.required">
+          The Last Name is required
+        </div>
+         <div class="alert alert-danger" *ngIf="formData.lName.errors.pattern">
+              The Last Name is not valid, Numeric data not allowed
+          </div>
+      </div>
+          </div>
+        <div class="form-group" [ngClass]="{'has-error': !formData.eMail.valid && formData.eMail.touched}">
+          <label class="col-md-4">E-mail</label>
+          <input type="text" class="form-control" name="eMail" formControlName="eMail"/>
+          <div *ngIf="formData.eMail.touched && formData.eMail.errors" style="margin-top:10px">
+        <div class="alert alert-danger" *ngIf="formData.eMail.errors.required">
+          The E-mail is required
+        </div>
+         <div class="alert alert-danger" *ngIf="formData.eMail.errors.pattern">
+              The E-mail is not valid
+          </div>
+      </div>
+          </div> 
+        <div class="form-group" [ngClass]="{'has-error': !formData.address.valid && formData.address.touched}">
+          <label class="col-md-4">Address</label>
+          <input type="text" class="form-control" name="address" formControlName="address"/>
+          <div *ngIf="formData.address.touched && formData.address.errors" style="margin-top:10px">
+        <div class="alert alert-danger" *ngIf="formData.address.errors.required">
+          The Address is required
+        </div>         
+      </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          <!-- <p>Form value: {{ myform.value | json }}</p>
+      <p>Form status: {{ myform.status | json }}</p> -->
+      
+      </form>
+  </div>
+</div>
+</div>
+
