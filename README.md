@@ -6,8 +6,7 @@ This is a Angular7 Sample reactive form module. This is a form that is well vali
     <img  alt="Angular7-reactive-postMethod" src="img/reactive-postMethod.JPG" class="img-responsive">
 </p>
 
-To preview demo of Angular7 reactive post method project, [click here](https://angular-reactiveform-post-method.stackblitz.io)
-
+To preview demo of Angular7 reactive post method project, [click here](https://angular-reactiveform-post-method.stackblitz.io){:target="_blank"}
 
 
 ## Getting Started
