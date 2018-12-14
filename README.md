@@ -3,7 +3,7 @@
 This is a Angular7 Sample reactive form module. This is a form that is well validate the form field (e.g first name, last name, email and adderss) before post data to web API.
 
 <p align="center">
-    <img  alt="Angular7-reactive-postMethod" src="img/reactive-postMethod.jpg" class="img-responsive">
+    <img  alt="Angular7-reactive-postMethod" src="img/reactive-postMethod.JPG" class="img-responsive">
 </p>
 
 To preview demo of Angular7 reactive post method project, [click here](https://angular-reactiveform-post-method.stackblitz.io)
@@ -147,4 +147,4 @@ In `app.component.html`,
 #### Below is  the form data post and sending the data on payload
 <p align="center">
     <img  alt="Angular7-reactive-postData" src="img/reactive-postData.JPG" class="img-responsive">
-</p>.jpg
+</p>
