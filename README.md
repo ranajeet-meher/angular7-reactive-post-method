@@ -1,4 +1,4 @@
-# Reactive form module with post data ro web API
+# Reactive form module with post data to web API
 
 This is a Angular7 Sample reactive form module. This is a form that is well validate the form field (e.g first name, last name, email and adderss) before post data to web API.
 
